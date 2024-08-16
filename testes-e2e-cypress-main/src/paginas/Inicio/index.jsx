@@ -12,11 +12,10 @@ export default function Inicio() {
       <div className={estilos.container}>
         <div className={estilos.conteudo}>
           <div className={estilos.banner}>
-            <h2 data-test="titulo-principal">
+            <h1 data-test="titulo-principal">
               Experimente mais liberdade no controle da sua vida financeira.
               Crie sua conta com a gente!
-              akak
-            </h2>
+            </h1>
             <img
               src={ilustracaoBanner}
               alt="Gráficos e uma pessoa com dinheiro na mão"
