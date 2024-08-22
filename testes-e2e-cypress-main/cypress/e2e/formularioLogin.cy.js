@@ -24,5 +24,9 @@ it.only('Não deve permitir um campo em branco', () => {
     cy.getByData('botao-enviar').click()
     cy.getByData('mensagem-erro').should('exist').and('have.text', 'O campo email é obrigatório') 
     /* a mensagem exibida deve ser: "o campo email é obrigatório" */
+
 })
+
+
 })
+
