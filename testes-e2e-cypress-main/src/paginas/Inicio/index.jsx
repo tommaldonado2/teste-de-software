@@ -11,7 +11,7 @@ export default function Inicio() {
     <>
       <div className={estilos.container}>
         <div className={estilos.conteudo}>
-          <div className={estilos.banner} data-test="principal">
+          <div className={estilos.banner} data-test="titulo-principal">
             <h1 data-test="titulo-principal">
               Experimente mais liberdade no controle da sua vida financeira.
               Crie sua conta com a gente!
