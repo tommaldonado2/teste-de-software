@@ -15,7 +15,7 @@ describe('Testando múltiplas páginas', () => {
 
     cy.getByData('app-home').find('a').eq(2).click()
     cy.location('pathname').should('eq','/home/servicos')
-    cy.getByData('titulo-servico').should('exist').and('have.text', 'Serviços')
+    cy.getByData('titulo-servico').should('exist').and('have.descendants', 'h5', 'img')
 
     cy.getByData('app-home').find('a').eq(3).click()
     cy.location('pathname').should('eq','/home/investimentos')
