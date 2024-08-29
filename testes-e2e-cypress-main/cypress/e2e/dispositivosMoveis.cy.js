@@ -1,4 +1,9 @@
 describe('Testando dispositivos móveis', () => {
+    beforeEach (() => {
+        cy.viewport(550, 750) 
+		cy.viewport('iphone-6')  
+    })
+
     it('Deve existir um menu burguer', () => {
         cy.visit('/')
         
