@@ -1,6 +1,8 @@
 describe('Formulário cadastro', () => {
     beforeEach(()=> {
     cy.visit('http://localhost:3000/')
+
+
     })
     it('Usuário deve conseguir se cadastrar com sucesso', () => {
     cy.getByData('botao-cadastro').click() 
@@ -11,7 +13,6 @@ describe('Formulário cadastro', () => {
     cy.getByData('mensagem-sucesso').should('exist').and('have.text', 'Usuário cadastrado com sucesso!')
         
     })
-
     it ('Não deve permitir um e-mail inválido!', () => {
         cy.getByData('botao-cadastro').click()
         cy.getByData('email-input').type('neilton@alura')

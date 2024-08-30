@@ -7,7 +7,6 @@ describe('Testando múltiplas páginas', () => {
     cy.getByData('senha-input').type('123456')
     cy.getByData('botao-enviar').click()
     cy.location('pathname').should('eq','/home')
-
     
     cy.getByData('app-home').find('a').eq(1).click()
     cy.location('pathname').should('eq','/home/cartoes')
