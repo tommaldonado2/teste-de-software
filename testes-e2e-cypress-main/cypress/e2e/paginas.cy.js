@@ -19,8 +19,6 @@ describe('Testando múltiplas páginas', () => {
     cy.getByData('app-home').find('a').eq(3).click()
     cy.location('pathname').should('eq','/home/investimentos')
     cy.getByData('invest').should('exist').and('have.text', 'Investimentos')
-
     })
-
 })
     

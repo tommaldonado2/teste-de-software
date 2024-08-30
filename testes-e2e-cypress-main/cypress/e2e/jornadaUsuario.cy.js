@@ -22,4 +22,4 @@ describe('Jornadas de usuário', () => {
     cy.getByData('botao-sair').click()
     cy.location('pathname').should('eq','/')
     })
-    })
+})
